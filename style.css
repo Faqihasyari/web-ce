@@ -54,8 +54,13 @@ header {
   display: none;
 }
 .hero{
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+  position: relative;
+  height: 100vh;
+  background: url('assets/images/images_hero.webp') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
 }
