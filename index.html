@@ -23,37 +23,65 @@
 
 </head>
 <body>
-    <!-- navbar -->
-    <header>
-        <a href="#" class="logo">Dimana woi</a>
 
-        <ul class="navlist">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Budaya</a></li>
-            <li><a href="#">Kuliner</a></li>
-            <li><a href="#">Wisata</a></li>
-            <li><a href="#">Tentang</a></li>
-        </ul>
+  <!-- Header -->
+  <header>
+    
+    <ul class="menu-bar">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Budaya</a></li>
+      <li><a href="#">Kuliner</a></li>
+      <li><a href="#">Wisata</a></li>
+      <li><a href="#">Tentang</a></li>
+    </ul>
+  </header>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
-    <!-- hero section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Ayo lihat KOTA CIREBON</h1>
-            <a href="#"><i class="ri-compass-3-fill"></i></i> Ayo Jelajahi!</a>
-        </div>
-        <div class="wave">
-            <svg viewBox="0 0 1440 320">
-              <path fill="#ffffff" fill-opacity="1"
-                d="M0,192L60,202.7C120,213,240,235,360,245.3C480,256,600,256,720,250.7C840,245,960,235,1080,224C1200,213,1320,203,1380,197.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-              </path>
-            </svg>
-          </div>
-        </section>
-    </section>
+  <!-- Hero -->
+  <section class="hero">
+   <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Kota Cirebon</h1>
+    <p>Kota Cirebon memiliki banyak sekali keberagaman mulai <br> dari tari topeng tradisi dan lainnya</p>
+    <button class="button">
+      <div class="icon">
+          <svg class="top">
+              <use xlink:href="#top">
+          </svg>
+          <svg class="bottom">
+              <use xlink:href="#bottom">
+          </svg>
+      </div>
+      <span>Ayo Lihat</span>
+  </button>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="top">
+          <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM16.5 7.5L10 10L7.5 16.5L14 14L16.5 7.5ZM12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13Z"></path>
+      </symbol>
+      
+  </svg>
+  
+  <!-- dribbble - twitter -->
+  
+  </div>
 
-    <!-- js link -->
-    <script src="script.js"></script>
+    <!-- Wave -->
+    <div class="wave-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+            <path fill="#ffffff" fill-opacity="1"
+              d="M0,64L120,96C240,128,480,192,720,208C960,224,1200,192,1320,176L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+          </svg>
+          
+      </div>
+  </section>
+
+  <!-- Konten Lanjutan -->
+  <section class="content-section">
+    <h2>Konten Berikutnya</h2>
+    <p>Ini bagian setelah hero agar wave bawah terlihat saat discroll.</p>
+  </section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
