@@ -531,9 +531,8 @@ header {
 
 /* footer css */
 .footer {
-  background: linear-gradient(to right, #6EC1E4, #A9D5C7);
+  background: linear-gradient(to right, #00519C);
   color: #1a1a1a;
-  padding: 3rem 1rem 1rem;
   font-family: 'Inter', sans-serif;
 }
 
@@ -608,4 +607,61 @@ header {
   .footer-brand {
     width: 100%;
   }
+}
+/*  */
+.cta-2 {
+  background: #333;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  height: 350px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: 150px;
+  position: relative;
+  width: 300px;
+  
+  &:hover {
+     
+     img {
+        top: -10%;
+        filter: brightness(70%);
+     }
+     
+     .text {
+        bottom: 0;
+     }
+  }
+  
+  img {
+     bottom: 0;
+     filter: brightness(100%);
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+     transition: 0.5s ease-in-out;
+     width: 115%;
+  }
+  
+  .text {
+     bottom: -40%;
+     padding: 15px;
+     position: absolute;
+     transition: 0.5s ease-in-out;
+
+     h2 {
+        color: #fff;
+        display: inline-block;
+        font-weight: 300;
+        margin-bottom: 5px;
+        position: relative;
+     }
+     
+     p {
+        color: #fff;
+        font-weight: 300;
+     }
+  }
+}
+.cta-2-wrapper{
+  padding-top: 100px;
 }
