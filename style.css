@@ -746,13 +746,20 @@ header {
   height: 100%;
   border: none;
 }
-
-/* .title-container{
+.title-container {
+  text-align: center;
   position: relative;
-  background-color: black;
-  width: 50px;
-} */
-/* card page */
+}
+
+.history-title::before {
+  content: "";
+  display: block;
+  width: 90px;          /* Panjang garis */
+  height: 4px;          /* Ketebalan garis */
+  background-color: green;
+  margin: 0 0 5px 0; /* Tengah + jarak bawah */
+}
+
 body {
   --background-color: #18181B;
   --text-color: #A1A1AA;
