@@ -686,14 +686,6 @@ header {
 }
 
 /* Halaman Tentang */
-.top-banner {
-  background-color: #e1f3e1;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #3b7f3b;
-}
-
 .history-section {
   max-width: 900px;
   margin: 60px auto;
@@ -715,7 +707,6 @@ header {
   padding-left: 180px; /* jarak dari kiri */
   font-size: 25px;
   font-weight: normal;
-  border-top: 2px solid #ccc; /* garis di atas */
   padding-top: 10px;          /* jarak antara garis dan teks */
   width: fit-content;         /* agar garis sesuai panjang teks */
   margin-bottom: 30px;
@@ -725,7 +716,7 @@ header {
 .history-title span {
   font-weight: bold;
   display: inline-block;
-  color: #2c7a2c;
+  color: #0069ff;
 }
 
 .video-container {
@@ -749,6 +740,7 @@ header {
 .title-container {
   text-align: center;
   position: relative;
+  padding-top: 80px;
 }
 
 .history-title::before {
@@ -756,7 +748,7 @@ header {
   display: block;
   width: 90px;          /* Panjang garis */
   height: 4px;          /* Ketebalan garis */
-  background-color: green;
+  background-color: #0069ff;
   margin: 0 0 5px 0; /* Tengah + jarak bawah */
 }
 
@@ -788,7 +780,7 @@ body {
   --card-hover-box-shadow-2: rgba(0, 0, 0, 0.3);
   --card-hover-box-shadow-2-y: 15px;
   --card-hover-box-shadow-2-blur: 25px;
-  --card-hover-icon-color: #34D399;
+  --card-hover-icon-color: #0069ff;
   --card-hover-icon-background-color: rgba(52, 211, 153, 0.1);
   --card-hover-icon-border-color: rgba(52, 211, 153, 0.2);
 
@@ -1259,6 +1251,9 @@ body {
       }
     }
   }
+}
+.hero-section-2 {
+  background: linear-gradient(to top, rgba(34,197,94,0.3), transparent);
 }
 
 
