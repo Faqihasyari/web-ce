@@ -1252,9 +1252,18 @@ body {
     }
   }
 }
-.hero-section-2 {
-  background: linear-gradient(to top,rgba(56, 189, 248, 0.1), transparent);
+
+.full-width-img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px; /* agar sedikit di bawah video */
+  display: block;
 }
-
-
-// Center
+.hero-section-2 {
+  background-image: url('/assets/models/models_tentang.png');
+  background-size: cover;         /* Gambar menutupi area */
+  background-position: center;    /* Fokus di tengah gambar */
+  height: 50vh;                   /* Setengah tinggi layar */
+  position: relative;             /* Supaya bisa diisi konten */
+  color: white;                   /* opsional: jika teks di atas gambar */
+}
