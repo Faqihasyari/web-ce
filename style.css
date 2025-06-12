@@ -1253,17 +1253,13 @@ body {
   }
 }
 
-.full-width-img {
-  width: 100%;
-  height: auto;
-  margin-top: 20px; /* agar sedikit di bawah video */
-  display: block;
-}
 .hero-section-2 {
-  background-image: url('/assets/models/models_tentang.png');
+  background-image: url('/assets/models/modelss.png');
   background-size: cover;         /* Gambar menutupi area */
-  background-position: center;    /* Fokus di tengah gambar */
-  height: 50vh;                   /* Setengah tinggi layar */
+  background-position: bottom;    /* Fokus di tengah gambar */
+  height: 100vh;    
+  width: 100%;
+  
+  /* Setengah tinggi layar */
   position: relative;             /* Supaya bisa diisi konten */
-  color: white;                   /* opsional: jika teks di atas gambar */
 }
