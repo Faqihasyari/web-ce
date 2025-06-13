@@ -752,6 +752,7 @@ header {
   margin: 0 0 5px 0; /* Tengah + jarak bawah */
 }
 
+/* card tentang */
 body {
   --background-color: #18181B;
   --text-color: #A1A1AA;
@@ -831,6 +832,7 @@ body {
   grid-template-columns: repeat(3, 240px);
   grid-gap: 32px;
   position: relative;
+  padding-top: 90px;
   justify-content: center;
   z-index: 1;
 }
@@ -1252,7 +1254,7 @@ body {
     }
   }
 }
-
+/* card tentang end */
 .hero-section-2 {
   background-image: url('/assets/models/modelss.png');
   background-size: cover;         /* Gambar menutupi area */
@@ -1262,4 +1264,8 @@ body {
   
   /* Setengah tinggi layar */
   position: relative;             /* Supaya bisa diisi konten */
+}
+/* container grid */
+.container-grid{
+
 }
