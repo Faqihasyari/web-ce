@@ -716,7 +716,7 @@ header {
 .history-title span {
   font-weight: bold;
   display: inline-block;
-  color: #0069ff;
+  color: #3F6735;
 }
 
 .video-container {
@@ -748,7 +748,7 @@ header {
   display: block;
   width: 90px;          /* Panjang garis */
   height: 4px;          /* Ketebalan garis */
-  background-color: #0069ff;
+  background-color: #51AB3B;
   margin: 0 0 5px 0; /* Tengah + jarak bawah */
 }
 
@@ -1272,12 +1272,14 @@ body {
   padding-bottom: 100px;
   height: 50vh;
 }
-.{}
-ul {
+
+.gallery-wrapper ul {
   display: flex;
+  flex-wrap: wrap; /* Agar isi bisa membungkus */
+  justify-content: center; /* Gambar-gambar ditata di tengah */
   width: calc(80% - 2rem);
   padding: 0;
-  margin: 0;
+  margin: 0 auto; /* Ini yang memusatkan UL */
   list-style-type: none;
 }
 
@@ -1349,4 +1351,17 @@ li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
 li:is(:hover, :focus-within) + li + li + li + li + li + li {
   --active-lerp: var(--lerp-6);
   z-index: 1;
+}
+.gallery-wrapper {
+  width: 100%;
+  background-image: url('assets/models/model2.png');
+  background-size: cover; 
+  text-align: center; /* Untuk judul biar di tengah */
+}
+.gallery {
+  display: flex;
+  justify-content: center; /* Pusat horizontal */
+  align-items: center;      /* Pusat vertikal jika perlu */
+  background-color: white;
+  
 }
