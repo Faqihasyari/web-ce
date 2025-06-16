@@ -1268,6 +1268,6 @@ body {
 /* container grid */
 .container-grid{
   background-image: url('assets/models/model2.png');
-  background-size: contain; 
-  
+  background-size: cover; 
+  padding: 100px;
 }
