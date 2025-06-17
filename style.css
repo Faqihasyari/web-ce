@@ -1356,6 +1356,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   width: 100%;
   background-image: url('assets/models/model2.png');
   background-size: cover; 
+  height: 50vh;
   text-align: center; /* Untuk judul biar di tengah */
 }
 .gallery {
@@ -1363,5 +1364,5 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   justify-content: center; /* Pusat horizontal */
   align-items: center;      /* Pusat vertikal jika perlu */
   background-color: white;
-  
+  padding-bottom: 400px;
 }
