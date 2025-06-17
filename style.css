@@ -1446,11 +1446,14 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
+  
+  
 }
 
 .hero-2 {
   position: relative;
-  background: #333333;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center;
+  background-size: cover;
   color: white;
   height: 100vh;
   display: flex;
@@ -1483,7 +1486,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   left: 0;
   right: 0;
   height: 200px;
-  background-color: var(--color);
+  background-color: transparent;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
   transition: 500ms;
 }
@@ -1492,8 +1495,8 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 .waves::after {
   content: '';
   position: absolute;
-  width: 300vw;
-  height: 300vw;
+  width: 220vw;
+  height: 220vw;
   top: -65vw;
   left: 50%;
   transform: translate(-50%, -75%);
@@ -1501,7 +1504,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 
 .waves::before {
   border-radius: 44%;
-  background: rgba(51, 51, 51, 1);
+  background: rgba(51, 51, 51, 0.3);
   animation: waves 8s linear infinite;
 }
 
