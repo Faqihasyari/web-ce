@@ -1523,3 +1523,95 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
     transform: translate(-50%, -75%) rotate(360deg);
   }
 }
+.blog-page {
+  padding: 2rem;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.container-3 {
+  display: flex;
+  gap: 2rem;
+  padding: 0 130px;
+}
+
+/* Konten blog kiri */
+.content-scroll {
+  flex: 2;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.post {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.judul-post:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.post .date {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Sidebar kanan */
+.sidebar {
+  flex: 1;
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
+
+.search-box {
+  margin-bottom: 2rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-box button {
+  padding: 0.5rem 1rem;
+}
+
+.latest-info h3 {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.latest-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.latest-info li {
+  margin-bottom: 1rem;
+}
+
+.latest-info .judul {
+  font-weight: bold;
+}
+
+.latest-info .tgl {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.latest-info .merah {
+  color: red;
+}
