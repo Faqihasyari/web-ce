@@ -548,6 +548,7 @@ header {
   background: linear-gradient(to right, #00519c);
   color: #1a1a1a;
   font-family: "Inter", sans-serif;
+  
 }
 
 .footer-container {
@@ -1446,7 +1447,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
-  
+  text-align: center;
   
 }
 
@@ -1543,6 +1544,10 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   padding-right: 1rem;
 }
 
+.content-scroll a {
+  color: black;
+}
+
 .post {
   margin-bottom: 2rem;
   border-bottom: 1px solid #eee;
@@ -1630,3 +1635,5 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   font-weight: bold;
   font-size: 14px;
 }
+
+/*  */
