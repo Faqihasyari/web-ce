@@ -1636,4 +1636,102 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   font-size: 14px;
 }
 
-/*  */
+/* content budaya 1 */
+.blog-header {
+  text-align: center;
+  padding: 90px 20px 20px;
+  font-family: sans-serif;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-align: left; 
+}
+
+.breadcrumb a {
+  color: black;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #333;
+}
+
+.judul-article {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+  margin: 20px 0 10px;
+}
+
+.meta-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.meta-info .views {
+  margin-left: 10px;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-article {
+  flex: 2;
+}
+
+.featured-img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.img-caption {
+  font-size: 13px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.article-paragraph {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.sidebar {
+  flex: 1;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-list li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #222;
+}
+
+.news-list small {
+  color: #999;
+  font-size: 13px;
+}
+

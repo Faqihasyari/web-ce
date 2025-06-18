@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icon link -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <!-- remixicon link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    
+        <ul class="menu-bar">
+          <li class="active"><a href="index.html">Beranda</a></li>
+          <li><a href="budaya.html">Budaya</a></li>
+          <li><a href="#">Kuliner</a></li>
+          <li><a href="#">Wisata</a></li>
+          <li><a href="./about.html">Tentang</a></li>
+        </ul>
+      </header>
+      <section class="blog-header">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a> > 
+          <a href="kategori.html">Kuliner</a> > 
+          <span>Susu dan Roti Bakar Om Bob</span>
+        </nav>
+      
+        <h1 class="judul-article">Susu dan Roti Bakar Om Bob</h1>
+      
+        <div class="meta-info">
+          <span>By <strong>Admin Program</strong></span> -
+          <span>14 September 2023</span> &nbsp;
+          <span class="views">
+            👁️ 1624
+          </span>
+        </div>
+      </section>
+      <section class="article-content">
+        <div class="main-article">
+          <img src="assets/images/bergerak.jpg" alt="Om Bob" class="featured-img">
+          <p class="img-caption">foto: https://www.killerburger.biz/</p>
+          <p class="article-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsa atque perferendis, eligendi eius commodi aliquid voluptates fugit. Vero, sunt! Aperiam non nulla in quis tempora illum nesciunt quos aspernatur illo. Ducimus eos iusto reprehenderit molestias alias. Ut omnis doloremque, impedit illo voluptas deserunt perspiciatis facilis natus accusamus tempora? Facere, nobis quod. Inventore animi odio dolorem molestias accusamus illo exercitationem aut enim eveniet doloribus in ad, quia voluptatum nam modi perferendis rerum, tempora et magnam sequi. Nam nisi quo architecto amet, et accusantium modi pariatur distinctio aperiam voluptate, sint ex natus eius, voluptatum odit sit totam aut aliquid esse harum minus? Sapiente obcaecati dignissimos dolorum est ullam. Incidunt ratione doloremque mollitia at facere molestias ad sunt ullam placeat nesciunt necessitatibus ab, unde facilis id nam suscipit! Possimus voluptates maxime exercitationem, ipsum ex modi dolores! Porro nam possimus voluptas consequuntur qui quidem, voluptatibus cumque incidunt adipisci, perferendis laborum necessitatibus, suscipit rerum?
+          </p>
+          <!-- Tambahkan paragraf-paragraf artikel lainnya di sini -->
+        </div>
+      
+        <aside class="sidebar">
+            <div class="latest-info">
+          <h3>Info Terbaru</h3>
+          <ul class="news-list">
+            <li><span class="judul">Kangen Dolan Teras Malioboro 2025</span><br><small>18 Juni 2025</small></li>
+            <li><span class="judul">Kontes Burung Berkicau Piala Pakualam</span><br><small>16 Juni 2025</small></li>
+            <li><span class="judul">Malioboro Run 2025</span><br><small>15 Juni 2025</small></li>
+            <!-- Tambahkan daftar lainnya -->
+          </ul>
+        </div>
+        </aside>
+      </section>
+      
+      <script>
+        const currentPage = window.location.pathname.split("/").pop(); // Ambil nama file halaman sekarang
+        const menuItems = document.querySelectorAll(".menu-bar li");
+      
+        menuItems.forEach((item) => {
+          const link = item.querySelector("a");
+          const href = link.getAttribute("href");
+      
+          // Jika href sama dengan halaman sekarang, beri class active
+          if (href === currentPage || (currentPage === "" && href === "index.html")) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        });
+      </script>
+</body>
+</html>
