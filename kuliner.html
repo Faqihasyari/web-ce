@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desain Web CE</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icon link -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <!-- remixicon link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    
+        <ul class="menu-bar">
+          <li class="active"><a href="index.html">Beranda</a></li>
+          <li><a href="budaya.html">Budaya</a></li>
+          <li><a href="kuliner.html">Kuliner</a></li>
+          <li><a href="#">Wisata</a></li>
+          <li><a href="./about.html">Tentang</a></li>
+        </ul>
+      </header>
+    <script>
+        const currentPage = window.location.pathname.split("/").pop(); // Ambil nama file halaman sekarang
+        const menuItems = document.querySelectorAll(".menu-bar li");
+      
+        menuItems.forEach((item) => {
+          const link = item.querySelector("a");
+          const href = link.getAttribute("href");
+      
+          // Jika href sama dengan halaman sekarang, beri class active
+          if (href === currentPage || (currentPage === "" && href === "index.html")) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        });
+      </script>
+</body>
+</html>
