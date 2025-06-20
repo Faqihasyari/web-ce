@@ -20,7 +20,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
-</head>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  </head>
 <body>
     <header>
     
@@ -89,19 +93,27 @@
           </div>
           <div class="kuliner-detail-wrapper">
             <div class="kuliner-detail-item">
-              <img src="assets/images/bergerak.jpg" alt="Kidung Pertiwi">
+              <div class="image-wrapper-2">
+                <img src="assets/images/bergerak.jpg" alt="Kidung Pertiwi">
+                <div class="overlay-label">KULINER</div>
+              </div>
+            
               <div class="detail-content">
                 <h2 class="judul-post"><span>KIDUNG PERTIWI</span> (21 Juni 2025)</h2>
                 <p class="tanggal">12 June 2025</p>
                 <p class="deskripsi">
-                  Dalam rangka memperingati Hari Musik Dunia 2025 sekaligus Ulang Tahun ke-4 Yogyakarta Royal Orchestra, Kawedanan Kridhamardawa Karaton Ngayogyakarta Hadiningrat mempersembahkan: KIDUNG PERTIWI Konser Yogyakarta Royal Orchestra...
+                  Dalam rangka memperingati Hari Musik Dunia 2025 sekaligus Ulang Tahun ke-4 Yogyakarta Royal Orchestra...
                 </p>
-                <a href="#" class="read-more">Read more</a>
+                <a href="content_kuliner1.html" class="read-more">Read more</a>
               </div>
             </div>
+            
           
             <div class="kuliner-detail-item">
-              <img src="assets/images/bergerak.jpg" alt="Keroncong Pesisiran">
+              <div class="image-wrapper-2">
+                <img src="assets/images/bergerak.jpg" alt="Kidung Pertiwi">
+                <div class="overlay-label">KULINER</div>
+              </div>
               <div class="detail-content">
                 <h2 class="judul-post"><span>Keroncong Pesisiran</span> (20 Juni 2025)</h2>
                 <p class="tanggal">11 June 2025</p>
@@ -113,7 +125,10 @@
             </div>
 
             <div class="kuliner-detail-item">
-              <img src="assets/images/bergerak.jpg" alt="Keroncong Pesisiran">
+              <div class="image-wrapper-2">
+                <img src="assets/images/bergerak.jpg" alt="Kidung Pertiwi">
+                <div class="overlay-label">KULINER</div>
+              </div>
               <div class="detail-content">
                 <h2 class="judul-post"><span>Keroncong Pesisiran</span> (20 Juni 2025)</h2>
                 <p class="tanggal">11 June 2025</p>
@@ -125,7 +140,10 @@
             </div>
 
             <div class="kuliner-detail-item">
-              <img src="assets/images/bergerak.jpg" alt="Keroncong Pesisiran">
+              <div class="image-wrapper-2">
+                <img src="assets/images/bergerak.jpg" alt="Kidung Pertiwi">
+                <div class="overlay-label">KULINER</div>
+              </div>
               <div class="detail-content">
                 <h2 class="judul-post"><span>Keroncong Pesisiran</span> (20 Juni 2025)</h2>
                 <p class="tanggal">11 June 2025</p>
@@ -137,6 +155,66 @@
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <div id="map"></div>
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+           // Inisialisasi peta, posisi awal difokuskan ke Cirebon
+  const map = L.map('map').setView([-6.7322, 108.5523], 13); // Titik tengah kota Cirebon
+
+// Tambahkan tile dari OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+          // Daftar lokasi kuliner
+          const kulinerPlaces = [
+  {
+    nama: "Empal Gentong Mang Darma",
+    lat: -6.737514,
+    lon: 108.552536,
+    info: "Empal gentong legendaris khas Cirebon."
+  },
+  {
+    nama: "Nasi Jamblang Bu Nur",
+    lat: -6.719987,
+    lon: 108.556511,
+    info: "Nasi jamblang paling populer di Cirebon."
+  },
+  {
+    nama: "Nasi Lengko H. Barno",
+    lat: -6.719084,
+    lon: 108.557947,
+    info: "Nasi lengko dengan bumbu kacang khas."
+  },
+  {
+    nama: "Mie Koclok Panjunan",
+    lat: -6.719985,
+    lon: 108.572176,
+    info: "Mie koclok creamy dengan ayam dan telur."
+  },
+  {
+    nama: "Tahu Gejrot Kanoman",
+    lat: -6.721902,
+    lon: 108.567137,
+    info: "Tahu gejrot khas dengan kuah pedas manis."
+  }
+];
+      
+          // Tambahkan marker ke peta
+          kulinerPlaces.forEach(place => {
+  const gmapsUrl = `https://www.google.com/maps?q=${place.lat},${place.lon}`;
+  L.marker([place.lat, place.lon])
+    .addTo(map)
+    .bindPopup(`
+      <b>${place.nama}</b><br>
+      ${place.info}<br>
+      <a href="${gmapsUrl}" target="_blank">Lihat di Google Maps</a>
+    `);
+});
+        </script>
       </section>
       
       

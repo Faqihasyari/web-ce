@@ -1904,3 +1904,32 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
     width: 100%;
   }
 }
+
+.image-wrapper-2 {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.overlay-label {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  background-color: black; /* merah transparan */
+  color: white;
+  padding: 5px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 12px;
+}
