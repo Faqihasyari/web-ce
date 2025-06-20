@@ -55,6 +55,7 @@
             </div>
       
             <!-- 4 kartu kecil di kanan -->
+            <a href="content_kuliner1.html">
             <div class="kuliner-card small">
               <img src="assets/images/bergerak.jpg" alt="Kuliner 2">
               <div class="card-content">
@@ -63,6 +64,7 @@
                 <p>21 Juni 2025</p>
               </div>
             </div>
+          </a>
       
             <div class="kuliner-card small">
               <img src="assets/images/bergerak.jpg" alt="Kuliner 3">
@@ -155,71 +157,70 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="container-map">
-        <div class="map-section">
-          <h2 class="map-title">Lokasi Beberapa Tempat Kuliner di Cirebon</h2>
-          <div class="divider"></div>
+        <section class="container-map">
+          <div class="map-section">
+            <h2 class="map-title">Lokasi Beberapa Tempat Kuliner di Cirebon</h2>
+            <div class="divider"></div>
+          </div>
           <div id="map"></div>
-        </div>
-        <div id="map"></div>
-
-        <!-- Leaflet JS -->
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-        <script>
-           // Inisialisasi peta, posisi awal difokuskan ke Cirebon
-  const map = L.map('map').setView([-6.7322, 108.5523], 13); // Titik tengah kota Cirebon
-
-// Tambahkan tile dari OpenStreetMap
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap contributors'
-}).addTo(map);
-          // Daftar lokasi kuliner
-          const kulinerPlaces = [
-  {
-    nama: "Empal Gentong Haji Apud",
-    lat: -6.705032337302864, 
-    lon: 108.5179155140015,
-    info: "Empal gentong legendaris khas Cirebon."
-  },
-  {
-    nama: "Nasi Jamblang Bu Nur",
-    lat: -6.719987,
-    lon: 108.556511,
-    info: "Nasi jamblang paling populer di Cirebon."
-  },
-  {
-    nama: "Nasi Lengko H. Barno",
-    lat: -6.713265375138817, 
-    lon: 108.55924554586264,
-    info: "Nasi lengko dengan bumbu kacang khas."
-  },
-  {
-    nama: "Mie Koclok Panjunan",
-    lat: -6.719985,
-    lon: 108.572176,
-    info: "Mie koclok creamy dengan ayam dan telur."
-  },
-  {
-    nama: "Tahu Gejrot Kanoman",
-    lat: -6.721902,
-    lon: 108.567137,
-    info: "Tahu gejrot khas dengan kuah pedas manis."
-  }
-];
-      
-          // Tambahkan marker ke peta
-          kulinerPlaces.forEach(place => {
-  const gmapsUrl = `https://www.google.com/maps?q=${place.lat},${place.lon}`;
-  L.marker([place.lat, place.lon])
-    .addTo(map)
-    .bindPopup(`
-      <b>${place.nama}</b><br>
-      ${place.info}<br>
-      <a href="${gmapsUrl}" target="_blank">Lihat di Google Maps</a>
-    `);
-});
-        </script>
+  
+          <!-- Leaflet JS -->
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+          <script>
+             // Inisialisasi peta, posisi awal difokuskan ke Cirebon
+    const map = L.map('map').setView([-6.7322, 108.5523], 13); // Titik tengah kota Cirebon
+  
+  // Tambahkan tile dari OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+            // Daftar lokasi kuliner
+            const kulinerPlaces = [
+    {
+      nama: "Empal Gentong Haji Apud",
+      lat: -6.705032337302864, 
+      lon: 108.5179155140015,
+      info: "Empal gentong legendaris khas Cirebon."
+    },
+    {
+      nama: "Nasi Jamblang Bu Nur",
+      lat: -6.719987,
+      lon: 108.556511,
+      info: "Nasi jamblang paling populer di Cirebon."
+    },
+    {
+      nama: "Nasi Lengko H. Barno",
+      lat: -6.713265375138817, 
+      lon: 108.55924554586264,
+      info: "Nasi lengko dengan bumbu kacang khas."
+    },
+    {
+      nama: "Mie Koclok Panjunan",
+      lat: -6.719985,
+      lon: 108.572176,
+      info: "Mie koclok creamy dengan ayam dan telur."
+    },
+    {
+      nama: "Tahu Gejrot Kanoman",
+      lat: -6.721902,
+      lon: 108.567137,
+      info: "Tahu gejrot khas dengan kuah pedas manis."
+    }
+  ];
+        
+            // Tambahkan marker ke peta
+            kulinerPlaces.forEach(place => {
+    const gmapsUrl = `https://www.google.com/maps?q=${place.lat},${place.lon}`;
+    L.marker([place.lat, place.lon])
+      .addTo(map)
+      .bindPopup(`
+        <b>${place.nama}</b><br>
+        ${place.info}<br>
+        <a href="${gmapsUrl}" target="_blank">Lihat di Google Maps</a>
+      `);
+  });
+          </script>
+        </section>
       </section>
       
       

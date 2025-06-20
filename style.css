@@ -1937,8 +1937,9 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 }
 
 .container-map{
-  background: yellow;
-  height: 800px;
+  background: grey;
+  height: 700px;
+  border-radius:12px;
 }
 
 .map-section {
