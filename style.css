@@ -1930,6 +1930,34 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 
 #map {
   height: 500px;
-  width: 100%;
+  width: 85%;
   border-radius: 12px;
+  
+  margin: 0 auto 100px; /* ini yang membuatnya berada di tengah */
+}
+
+.container-map{
+  background: yellow;
+  height: 800px;
+}
+
+.map-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.map-title {
+  font-size: 24px;
+  margin-bottom: 6px;
+  padding-top: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.divider {
+  width: 500px;
+  height: 3px;
+  background-color: black;
+  margin: 10px auto 20px auto;
+  border-radius: 2px;
 }

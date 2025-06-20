@@ -156,7 +156,12 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="container-map">
+        <div class="map-section">
+          <h2 class="map-title">Lokasi Beberapa Tempat Kuliner di Cirebon</h2>
+          <div class="divider"></div>
+          <div id="map"></div>
+        </div>
         <div id="map"></div>
 
         <!-- Leaflet JS -->
@@ -172,9 +177,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           // Daftar lokasi kuliner
           const kulinerPlaces = [
   {
-    nama: "Empal Gentong Mang Darma",
-    lat: -6.737514,
-    lon: 108.552536,
+    nama: "Empal Gentong Haji Apud",
+    lat: -6.705032337302864, 
+    lon: 108.5179155140015,
     info: "Empal gentong legendaris khas Cirebon."
   },
   {
@@ -185,8 +190,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   },
   {
     nama: "Nasi Lengko H. Barno",
-    lat: -6.719084,
-    lon: 108.557947,
+    lat: -6.713265375138817, 
+    lon: 108.55924554586264,
     info: "Nasi lengko dengan bumbu kacang khas."
   },
   {
