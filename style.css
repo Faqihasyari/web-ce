@@ -1739,6 +1739,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 .kuliner-section {
   background: #fff;
   font-family: 'Segoe UI', sans-serif;
+  padding-top: 80px;
 }
 
 .container-4 {
@@ -1959,4 +1960,185 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   background-color: black;
   margin: 10px auto 20px auto;
   border-radius: 2px;
+}
+
+/* halaman wisata */
+.hero-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-content-wisata {
+  flex: 1 1 45%;
+}
+
+.hero-content .label {
+  background-color: #f0f4ff;
+  color: #3264ff;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.hero-content .highlight {
+  color: #3264ff;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  color: #4b4b4b;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #3264ff;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.hero-image {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.tag {
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.yogyakarta {
+  top: 20%;
+  left: 5%;
+}
+
+.beach {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  bottom: 5%;
+  right: 5%;
+}
+
+.beach img {
+  width: 60px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.beach-info {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.wisata-section {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.wisata-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.wisata-subtitle {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.wisata-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "large1 large2"
+    "small1 small2"
+    "small3 small3";
+  gap: 20px;
+}
+
+.wisata-card {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: white;
+}
+
+.large {
+  height: 300px;
+}
+
+.wisata-card.large:first-child {
+  grid-area: large1;
+}
+.wisata-card.large:nth-child(2) {
+  grid-area: large2;
+}
+.wisata-card:nth-child(3) {
+  grid-area: small1;
+}
+.wisata-card:nth-child(4) {
+  grid-area: small2;
+}
+.wisata-card:nth-child(5) {
+  grid-area: small3;
+}
+
+.wisata-info {
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  padding: 20px;
+  width: 100%;
+}
+
+.wisata-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.wisata-info p {
+  font-size: 14px;
 }
