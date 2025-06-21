@@ -1820,7 +1820,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   font-weight: bold;
   border-radius: 4px;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 .kuliner-card:hover .tag {
@@ -1829,7 +1829,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 
 .card-content h3 {
   font-size: 18px;
-  margin: 5px 0;
+  margin: 30px 0;
 }
 
 .card-content p {
@@ -2069,76 +2069,80 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   font-weight: 500;
 }
 
-.wisata-section {
+.section-wisata {
+  text-align: center;
   max-width: 1200px;
   margin: auto;
-  text-align: center;
 }
 
-.wisata-title {
+.section-title {
   font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.wisata-subtitle {
-  color: #555;
-  margin-bottom: 40px;
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0 40px;
 }
 
-.wisata-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "large1 large2"
-    "small1 small2"
-    "small3 small3";
-  gap: 20px;
-}
 
-.wisata-card {
-  height: 250px;
+.card {
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 12px;
+  height: 250px;
   position: relative;
+  color: white;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  color: white;
+  
 }
 
-.large {
+.card-big {
   height: 300px;
 }
 
-.wisata-card.large:first-child {
-  grid-area: large1;
-}
-.wisata-card.large:nth-child(2) {
-  grid-area: large2;
-}
-.wisata-card:nth-child(3) {
-  grid-area: small1;
-}
-.wisata-card:nth-child(4) {
-  grid-area: small2;
-}
-.wisata-card:nth-child(5) {
-  grid-area: small3;
-}
-
-.wisata-info {
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+.card-content-2 {
+  position: relative;
+  z-index: 2;
   padding: 20px;
   width: 100%;
+  color: white;
 }
 
-.wisata-info h3 {
+.card-content-2 h3 {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
-.wisata-info p {
+
+.card-content-2 p {
   font-size: 14px;
+  margin-bottom: 5px;
 }
+
+.arrow {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+
+.grid-wisata-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto 10px auto;
+}
+
+.grid-wisata-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* crousel wisata */
