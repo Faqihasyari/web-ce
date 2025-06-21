@@ -40,7 +40,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    background-color: #f2f2f2;
     padding: 150px;
     flex-wrap: wrap;
   }
@@ -145,7 +144,7 @@
   
     </style>
   </head>
-<body style="background-color: #f2f2f2;">
+<body >
   <header>
     
     <ul class="menu-bar">
@@ -236,6 +235,58 @@
       </div>
     </div>
   </section>
+  <section class="hero-4">
+    <h1>Australia, the world’s largest island and smallest continent</h1>
+  </section>
+
+  <section class="view-grid">
+    <div class="header-row">
+      <h2>Let's Make People Feel Amazed</h2>
+      <a href="#">See All Views &rarr;</a>
+    </div>
+    <div class="card-container">
+      <div class="card-wisata">
+        <img src="https://source.unsplash.com/400x300/?koala" alt="Koala"/>
+        <h3>Great Barrier Reef</h3>
+        <p>One of the world's natural wonders, the Great Barrier Reef is a must-see for nature lovers.</p>
+      </div>
+      <div class="card-wisata">
+        <img src="https://source.unsplash.com/400x300/?sydney-opera-house" alt="Sydney"/>
+        <h3>Sydney Opera House</h3>
+        <p>Enjoy the iconic landmarks in Australia’s most famous city. Visit the Sydney Opera House!</p>
+      </div>
+      <div class="card-wisata">
+        <img src="https://source.unsplash.com/400x300/?gold-coast" alt="Gold Coast"/>
+        <h3>Gold Coast</h3>
+        <p>A paradise for beach lovers and water sports enthusiasts! Gold Coast is famous...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-highlight">
+    <div class="video-text">
+      <h2>Unforgettable moment<br>with unique events</h2>
+    </div>
+    <div class="video-card">
+      <div class="video-container">
+        <video id="video" src="https://www.w3schools.com/html/mov_bbb.mp4" poster="https://source.unsplash.com/800x400/?surf" controls></video>
+        <div class="play-overlay" onclick="togglePlay()">
+          ▶
+        </div>
+      </div>
+      <div class="video-info">
+        <div>
+          <h3>Explore Australia’s Hidden Gems</h3>
+          <p>Get ready to embark on the adventure of a lifetime! Our curated list of top travel destinations promises breathtaking landscapes, vibrant cultures, and experiences that will stay with you forever.</p>
+        </div>
+        <div class="price">
+          <p>Start From</p>
+          <h3>$754.00</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
       <script>
         const currentPage = window.location.pathname.split("/").pop(); // Ambil nama file halaman sekarang
@@ -253,5 +304,6 @@
           }
         });
       </script>
+      <script src="wisata.js"></script>
 </body>
 </html>
