@@ -531,7 +531,7 @@ header {
 }
 .wave-bottom-2 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   overflow: hidden;
   line-height: 0;
