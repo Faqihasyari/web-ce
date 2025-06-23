@@ -2206,7 +2206,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 }
 
 .video-highlight {
-  background: #0f4d7c;
+  background: #00519c;
   color: white;
   padding: 40px 20px;
 }
