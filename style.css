@@ -285,29 +285,65 @@ header {
 /* hamburger menu */
 /* Tombol hamburger */
 .menu-toggle {
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-  padding: 10px;
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.7); /* latar belakang hitam transparan */
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
 }
+
+.menu-toggle svg {
+  fill: white; /* warna ikon hamburger */
+  width: 24px;
+  height: 24px;
+}
+
 
 .menu-bar {
   position: fixed;
   top: 20px;
   right: 60px; /* agak ke kiri dari hamburger */
   background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 10px;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
-  transform: translateX(200%); /* sembunyikan keluar layar */
+  transform: translateX(150%); /* sembunyikan keluar layar */
+}
+
+.menu-bar.active {
+  transform: translateX(0); /* tampilkan */
+}
+
+.menu-bar li {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.menu-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Query untuk Mobile */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-bar {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    background: none;
+  }
 }
 
 .menu-bar.active {
