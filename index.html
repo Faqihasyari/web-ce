@@ -35,6 +35,25 @@
       <li><a href="./about.html">Tentang</a></li>
     </ul>
   </header>
+  <!-- responsive hp -->
+  <header>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="menu-bar">
+        <li class="active"><a href="index.html">Beranda</a></li>
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="#">Kuliner</a></li>
+        <li><a href="#">Wisata</a></li>
+        <li><a href="./about.html">Tentang</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+     function toggleMenu() {
+    const menu = document.querySelector('.menu-bar');
+    menu.classList.toggle('active');
+  }
+  </script>
 
   <!-- Hero -->
   <section class="hero">
@@ -42,7 +61,8 @@
   <div class="hero-content">
     <h1 style="font-size: 60px;">Kota Cirebon</h1>
     <p style="color: white;">Kota Cirebon memiliki banyak sekali keberagaman mulai <br> dari tari topeng tradisi dan lainnya</p>
-    <button class="button">
+    
+    <button class="button" onclick="delayedScroll()">
       <div class="icon">
           <svg class="top">
               <use xlink:href="#top">
@@ -51,6 +71,7 @@
               <use xlink:href="#bottom">
           </svg>
       </div>
+    
       <span>Ayo Lihat</span>
   </button>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -76,8 +97,8 @@
   </section>
 
   <!-- Konten Lanjutan -->
-  <div style="display: flex; justify-content: center; " class="section-content">
-  <div class="carousel" mask>
+  <div id="slide2" style="display: flex; justify-content: center; " class="section-content">
+  <div  class="carousel" mask>
     <article>
       <img src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
       <h2>Batik mega mendung</h2>
@@ -261,6 +282,17 @@
       item.classList.remove("active");
     }
   });
+</script>
+<!-- skrip delayed scroll -->
+<script>
+  function delayedScroll() {
+    setTimeout(() => {
+      const target = document.getElementById('slide2');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 1000); // 500 ms = 0.5 detik
+  }
 </script>
   <script src="script.js"></script>
 
