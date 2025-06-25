@@ -423,6 +423,7 @@ header {
   .carousel > article {
     position: absolute;
     top: 0;
+    padding: 1rem; 
     left: calc(100% + var(--carousel-item-gap));
     width: var(--carousel-item-width);
     height: var(--carousel-item-height);
@@ -485,6 +486,9 @@ header {
     display: grid;
     grid-template-rows: subgrid;
     font-size: 0.8rem;
+  
+    
+    
   }
   .carousel > article h2 {
     font-size: 1.2rem;
@@ -497,6 +501,7 @@ header {
   }
   .carousel > article a {
     text-decoration: none;
+    
     text-transform: lowercase;
     border: 1px solid var(--clr-cta);
     color: light-dark(var(--clr-cta), white);
@@ -607,7 +612,7 @@ header {
   grid-template-columns: repeat(2, 1fr); /* 2 kolom */
   gap: 16px; /* Jarak antar kotak */
 }
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -625,6 +630,7 @@ header {
   .cta p {
     font-size: 8px;
   }
+
 
   
 }
@@ -737,6 +743,9 @@ header {
   .footer-brand {
     width: 100%;
   }
+  .footer-brand p {
+    margin: auto;
+  }
 }
 /*  */
 .cta-2 {
@@ -792,6 +801,9 @@ header {
     }
   }
 }
+
+
+
 .cta-2-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 kolom */
@@ -799,6 +811,30 @@ header {
   margin-left: auto;
   padding-right: 80px;
   padding-top: 50px;
+}
+@media (max-width: 768px) {
+  .cta-2-wrapper{
+    grid-template-columns: 1fr;
+    padding-top: 20px; /* Lebih kecil dari 50px */
+    padding-right: 20px; /* Biar tidak terlalu mepet kanan */
+    padding-left: 20px; /* Tambahkan kiri supaya seimbang */
+    justify-content: center;
+  }
+  .cta-2 {
+    height: 200px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .parallax {
+    height: 140vh;
+  }
+  .cta-2 h2 {
+    font-size: 18px;
+  }
+  .cta-2 p {
+    font-size: 12px;
+  }
 }
 
 /* Halaman Tentang */
