@@ -607,21 +607,30 @@ header {
   grid-template-columns: repeat(2, 1fr); /* 2 kolom */
   gap: 16px; /* Jarak antar kotak */
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .grid-container {
     grid-template-columns: 1fr;
-    z-index: 999;
+    padding: 10px;
+  }
+  .container {
+    height: 100%;
+  }
+  .cta {
+    height: 100px;
+    width: 300px;
+  }
+  .cta h2 {
+    font-size: 18px;
+  }
+  .cta p {
+    font-size: 8px;
   }
 
-  .cta {
-    width: 100%;
-    height: auto; /* opsional agar tidak terpotong di HP kecil */
-  }
+  
 }
 
 /* gambar bergerak */
 .parallax {
-  margin-top: 1000px;
   background-image: url("assets/images/bergerak2.jpg");
   height: 120vh;
   background-attachment: fixed;
