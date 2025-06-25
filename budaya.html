@@ -31,6 +31,32 @@
           <li><a href="./about.html">Tentang</a></li>
         </ul>
       </header>
+
+      <!-- responsive hp -->
+  <header>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <svg viewBox="0 0 100 80" width="24" height="24">
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+        </svg></div>
+      <ul class="menu-bar">
+        <li class="active"><a href="index.html">Beranda</a></li>
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="kuliner.html">Kuliner</a></li>
+        <li><a href="wisata.html">Wisata</a></li>
+        <li><a href="./about.html">Tentang</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+     function toggleMenu() {
+    const menu = document.querySelector('.menu-bar');
+    menu.classList.toggle('active');
+  }
+  </script>
+
       <section class="hero-2">
         <div class="content-2">
           <h2>BUDAYA</h2>
@@ -107,7 +133,7 @@
               <h2 class="judul-post">Tradisi Grebeg Maulud di Keraton Yogyakarta</h2>
               <p class="date">10 Juni 2025</p>
               <div class="image-wrapper" style="position: relative;">
-                <img src="assets/images/bergerak.jpg" alt="Tari Topeng" style="width: 100%; display: block;">
+                <img src="assets/images/budaya/budaya1.jpg" alt="Tari Topeng" style="width: 100%; display: block;">
                 <span class="kategori-label">BUDAYA</span>
               </div>
               <p>Tradisi ini merupakan warisan budaya yang digelar setiap Maulid Nabi Muhammad SAW...</p>
@@ -120,7 +146,7 @@
               <p class="date">5 Juni 2025</p>
             
               <div class="image-wrapper" style="position: relative;">
-                <img src="assets/images/bergerak.jpg" alt="Tari Topeng" style="width: 100%; display: block;">
+                <img src="assets/images/budaya/budaya2.jpg" alt="Tari Topeng" style="width: 100%; display: block;">
                 <span class="kategori-label">BUDAYA</span>
               </div>
             
@@ -132,7 +158,7 @@
               <h2 class="judul-post">Tari Topeng Cirebon: Identitas dan Makna</h2>
               <p class="date">5 Juni 2025</p>
               <div class="image-wrapper" style="position: relative;">
-                <img src="assets/images/bergerak.jpg" alt="Tari Topeng" style="width: 100%; display: block;">
+                <img src="assets/images/budaya/budaya3.jpg" alt="Tari Topeng" style="width: 100%; display: block;">
                 <span class="kategori-label">BUDAYA</span>
               </div>
               <p>Tari topeng adalah warisan budaya tak benda dari Cirebon yang sarat makna simbolik...</p>

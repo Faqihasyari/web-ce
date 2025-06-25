@@ -302,7 +302,7 @@ header {
   height: 24px;
 }
 
-
+/*  */
 .menu-bar {
   position: fixed;
   top: 20px;
@@ -361,19 +361,9 @@ header {
   color: white;
   text-decoration: none;
 }
-
+/* end hamburger menu */
 /* Media Query untuk Mobile */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-  .menu-bar {
-    position: static;
-    transform: none;
-    flex-direction: row;
-    background: none;
-  }
-}
+
 
 /* crousel */
 @layer base, demo;
