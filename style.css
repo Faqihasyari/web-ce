@@ -980,7 +980,7 @@ body {
   }
 }
 
-.grid {
+.grid-2 {
   display: grid;
   grid-template-columns: repeat(3, 240px);
   grid-gap: 32px;
@@ -990,7 +990,7 @@ body {
   z-index: 1;
 }
 
-.card {
+.card-2 {
   background-color: var(--background-color);
   box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
   padding: 106px 16px 16px 16px;
@@ -2080,40 +2080,10 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   border-radius: 4px;
   font-size: 14px;
 }
-
-#map {
-  height: 500px;
-  width: 85%;
-  border-radius: 12px;
-  
-  margin: 0 auto 100px; /* ini yang membuatnya berada di tengah */
+.image-wrapper-2:hover .overlay-label {
+  background: rgba(255, 0, 0, 0.7); /* Merah semi transparan */
 }
 
-.container-map{
-  background: grey;
-  height: 700px;
-}
-
-.map-section {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.map-title {
-  font-size: 24px;
-  margin-bottom: 6px;
-  padding-top: 40px;
-  font-weight: bold;
-  color: #333;
-}
-
-.divider {
-  width: 500px;
-  height: 3px;
-  background-color: black;
-  margin: 10px auto 20px auto;
-  border-radius: 2px;
-}
 
 /* halaman wisata */
 .hero-3 {
