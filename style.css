@@ -1987,6 +1987,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 .card-content p {
   font-size: 14px;
   opacity: 0.9;
+  margin-top: -25px;
 }
 
 .kuliner-detail-wrapper {
@@ -2016,7 +2017,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 
 .detail-content h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .detail-content .tanggal {
