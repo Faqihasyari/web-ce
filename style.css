@@ -333,22 +333,11 @@ header {
 }
 
 .menu-bar a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 /* Media Query untuk Mobile */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-  .menu-bar {
-    position: static;
-    transform: none;
-    flex-direction: row;
-    background: none;
-  }
-}
 
 .menu-bar.active {
   transform: translateX(0); /* tampilkan */
@@ -362,9 +351,27 @@ header {
 }
 
 .menu-bar a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+    fill: white;
+  }
+  .menu-bar {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    background: none;
+  }
+  .menu-bar a{
+  color: black;
+
+  }
+  
+}
+
 /* end hamburger menu */
 /* Media Query untuk Mobile */
 
