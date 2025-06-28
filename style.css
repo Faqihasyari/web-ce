@@ -19,7 +19,7 @@ header {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 1;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1826,24 +1826,32 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 /* content budaya 1 */
 .blog-header {
   text-align: center;
-  padding: 90px 20px 20px;
+  padding: 120px 20px 20px;
   font-family: sans-serif;
 }
 
 .breadcrumb {
   font-size: 14px;
   color: #aaa;
+  position: relative;
   margin-bottom: 10px;
+  z-index: 100;
+  pointer-events: auto;
   text-align: left; 
 }
 
 .breadcrumb a {
   color: black;
   text-decoration: none;
+  position: relative;
+  z-index: 101;
+  pointer-events: auto;
 }
 
 .breadcrumb a:hover {
-  color: #333;
+  color: grey; /* warna merah saat hover (ganti sesuai selera) */
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .judul-article {
@@ -1920,6 +1928,45 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 .news-list small {
   color: #999;
   font-size: 13px;
+}
+/* responsiver */
+@media (max-width: 768px) {
+  .article-content {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+
+  .judul-article {
+    font-size: 28px;
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .meta-info {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .img-caption {
+    font-size: 12px;
+  }
+
+  .article-paragraph {
+    font-size: 15px;
+  }
+  .blog-header {
+    padding-top: 40px;
+  }
 }
 
 /* halaman kuliner */
