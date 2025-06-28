@@ -670,7 +670,7 @@ header {
 .fab { font-weight: bold; margin-right: 8px; }
 
 .footer {
-  background: linear-gradient(to right, #1e00ff, #0004ff);
+  background: linear-gradient(to right, #00519C, #00519C);
   color: white;
   padding: 3rem 2rem;
   font-family: sans-serif;
