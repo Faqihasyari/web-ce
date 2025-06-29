@@ -3,6 +3,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
 * {
@@ -323,6 +325,9 @@ header {
 }
 
 .menu-bar.active {
+  display: flex;
+
+  z-index: 999999;
   transform: translateX(0); /* tampilkan */
 }
 
@@ -341,6 +346,9 @@ header {
 /* Media Query untuk Mobile */
 
 .menu-bar.active {
+  display: flex;
+
+  z-index: 999999;
   transform: translateX(0); /* tampilkan */
 }
 
@@ -365,11 +373,15 @@ header {
     transform: none;
     flex-direction: row;
     background: none;
-    z-index: 1001;
   }
   .menu-bar a{
   color: black;
 
+  }
+  .menu-bar.active {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.95);
+    transform: translateX(0); /* tampilkan */
   }
   
 }
@@ -1949,10 +1961,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   }
 
   .breadcrumb {
-    font-size: 13px;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
+    display: none;
   }
   
 
