@@ -507,29 +507,28 @@ header {
   }
   .carousel > article h2 {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 600;
     padding-block: 0.75rem 0.25rem;
     margin: 0;
   }
   .carousel > article p {
     margin: 0;
   }
-  .carousel > article a {
-    text-decoration: none;
-    
-    text-transform: lowercase;
-    border: 1px solid var(--clr-cta);
-    color: light-dark(var(--clr-cta), white);
-    border-radius: 3px;
-    padding: 0.25rem 0.5rem;
-    place-self: start;
-    transition: 150ms ease-in-out;
-    &:hover,
-    &:focus-visible {
-      background-color: var(--clr-cta);
-      color: white;
-      outline: none;
-    }
+  .carousel > article .btn-baca {
+    height: 40px;
+  padding: 0 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  }
+  .carousel > article .btn-baca:hover {
+    background-color: #0056b3;
   }
 
   @keyframes marquee {
@@ -648,6 +647,26 @@ header {
 
 
   
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .container {
+    height: 100%;
+  }
+  .cta {
+    height: 150px;
+    width: 500px;
+  }
+  .cta h2 {
+    font-size: 22px;
+  }
+  .cta p {
+    font-size: 12px;
+  }
 }
 
 /* gambar bergerak */
@@ -784,6 +803,9 @@ header {
     bottom: 0;
     filter: brightness(100%);
     left: 0;
+    width: 100%;
+  height: 100%; /* atau misalnya: 250px */
+    object-fit: cover;
 
     position: absolute;
     right: 0;
@@ -845,6 +867,11 @@ header {
   }
   .cta-2 p {
     font-size: 12px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .parallax {
+    height: 100vh;
   }
 }
 
@@ -1731,6 +1758,9 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   font-size: 0.9rem;
   color: #999;
 }
+.post:hover .kategori-label {
+  background-color: rgba(255, 0, 0, 0.7);
+}
 
 /* Sidebar kanan */
 .sidebar {
@@ -1792,6 +1822,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   left: 10px;
   background-color: black;
   color: white;
+  border-radius: 5px;
   padding: 5px 10px;
   font-weight: bold;
   font-size: 14px;
@@ -2504,4 +2535,25 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   -webkit-box-orient: vertical;  /* Arah vertical */
   overflow: hidden;              /* Sembunyikan kelebihan teks */
   text-overflow: ellipsis;       /* Tambahkan titik-titik di akhir */
+}
+.tri-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;         /* Batasi hanya 2 baris */
+  -webkit-box-orient: vertical;  /* Arah vertical */
+  overflow: hidden;              /* Sembunyikan kelebihan teks */
+  text-overflow: ellipsis;       /* Tambahkan titik-titik di akhir */
+}
+.limit-4-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* batas 4 baris */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.limit-7-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 7; /* batas 4 baris */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
