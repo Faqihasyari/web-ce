@@ -906,7 +906,7 @@ header {
 .history-title span {
   font-weight: bold;
   display: inline-block;
-  color: #3F6735;
+  color: #00519C;
 }
 
 .video-container {
@@ -938,8 +938,28 @@ header {
   display: block;
   width: 90px;          /* Panjang garis */
   height: 4px;          /* Ketebalan garis */
-  background-color: #51AB3B;
+  background-color: #00519C;
   margin: 0 0 5px 0; /* Tengah + jarak bawah */
+}
+@media (max-width: 768px) {
+  .title-container {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+
+  .history-title {
+    padding-left: 0; /* reset padding */
+    font-size: 22px;
+  }
+
+  .hero-section-2 {
+    height: auto; /* Tinggi otomatis sesuai konten */
+  }
+
+  .history-title::before {
+    margin-left: 0; /* garis ikut kiri */
+  }
 }
 
 /* card tentang */
@@ -1552,7 +1572,10 @@ body {
 
 .section-gallery {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   background-color: #00519C;
   padding: 50px 20px;
   text-align: center;
@@ -1870,6 +1893,25 @@ body {
     font-size: 0.9rem;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-3 {
+    flex-direction: column;  /* Stack konten dan sidebar */
+    padding: 0 2rem;         /* Padding sedang */
+  }
+
+  .sidebar {
+    position: relative;
+    top: auto;
+    align-self: auto;
+    margin-top: 2rem;
+  }
+
+  .content-scroll {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+}
 
 /* content budaya 1 */
 .blog-header {
@@ -2013,6 +2055,35 @@ body {
   }
   .blog-header {
     padding-top: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-content {
+    flex-direction: column;
+    padding: 25px 30px;
+  }
+
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+  }
+
+  .img-caption {
+    font-size: 13px;
+  }
+
+  .article-paragraph {
+    font-size: 16px;
+  }
+
+  .news-list li {
+    font-size: 15px;
+  }
+
+  .news-list small {
+    font-size: 13px;
   }
 }
 
