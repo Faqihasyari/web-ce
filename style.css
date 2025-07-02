@@ -1401,7 +1401,36 @@ body {
     }
   }
 }
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr; /* hanya 1 kolom */
+    padding: 40px 20px;         /* padding lebih kecil */
+    grid-gap: 24px;
+  }
 
+  .card-2 {
+    width: 100%;                /* biar melebar ke container penuh */
+    max-width: 100%;
+  }
+
+  .container-grid {
+    height: auto;               /* hilangkan fixed height di mobile */
+    padding-bottom: 60px;
+  }
+
+  .card-2 h4 {
+    font-size: 16px;
+  }
+
+  .card-2 p {
+    font-size: 14px;
+  }
+
+  .card-2 .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 .day-night {
   cursor: pointer;
   position: absolute;
@@ -1479,8 +1508,7 @@ body {
 .container-grid{
   background-image: url('assets/models/model2.png');
   background-size: cover; 
-  padding-bottom: 100px;
-  height: 50vh;
+  height: auto;
 }
 
 /* Photo Gallery */
@@ -1581,6 +1609,19 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .section-gallery {
+    margin-top: 0; /* dari 120px menjadi 60px */
+  }
+}
+.gallery-image {
+  display: flex;
+  flex-wrap: wrap;          /* agar responsif ke bawah */
+  justify-content: center;  /* ini yang membuatnya di tengah */
+  max-width: 1200px;        /* batas lebar galeri */
+  margin: 0 auto;           /* ini membuat kontainer berada di tengah */
+  padding: 20px 0;
+}
 .section-title {
   font-size: 32px;
   font-weight: 700;
