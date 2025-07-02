@@ -143,7 +143,91 @@
     font-size: 13px;
     font-weight: 500;
   }
-  
+  /* Tablet (lebar layar max 1024px) */
+@media (max-width: 1024px) {
+  .hero-3 {
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 40px;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+
+  .tag {
+    font-size: 13px;
+  }
+
+  .beach {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+/* Mobile (lebar layar max 768px) */
+@media (max-width: 768px) {
+  .hero-3 {
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-image img {
+    max-width: 260px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .beach img {
+    width: 50px;
+    height: 35px;
+  }
+
+  .beach-info {
+    font-size: 12px;
+  }
+}
     </style>
   </head>
 <body >
@@ -189,8 +273,6 @@
         <span class="highlight">wisata di</span> cirebon 🌴
       </h1>
       <p>
-        <!-- Destinize membuat kamu selalu update terkait tempat liburan baru di Indonesia 
-        dengan mengikuti perkembangan para influencer di sosial media ✨ -->
         Beberapa destinasi Wisata di Kota Cirebon yang akan membuat kamu bersenang senang bersama dengan teman dan keluarga kamu  ✨
       </p>
       <div class="hero-buttons">
