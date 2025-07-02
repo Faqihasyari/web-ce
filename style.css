@@ -2115,6 +2115,63 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   opacity: 0.9;
   margin-top: -25px;
 }
+/* Untuk tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .kuliner-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .kuliner-card.big {
+    grid-column: 1 / 3; /* Full row */
+    grid-row: auto;
+    height: 300px;
+  }
+
+  .kuliner-card.small {
+    height: 250px;
+  }
+}
+
+/* Untuk HP (<= 768px) */
+@media (max-width: 768px) {
+  .kuliner-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .kuliner-card.big,
+  .kuliner-card.small {
+    grid-column: auto;
+    grid-row: auto;
+    height: 250px;
+  }
+}
+.separator-line {
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px auto;
+  width: 95%;
+  display: none; /* defaultnya sembunyi */
+}
+
+/* Tampilkan hanya di HP */
+@media (max-width: 768px) {
+  .separator-line {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .title{
+    margin-top: -33px;
+    text-align: center;
+
+  }
+  .subtitle {
+    margin-top: -10px;
+    text-align: center;
+  }
+}
 
 .kuliner-detail-wrapper {
   display: flex;
@@ -2526,6 +2583,12 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 .price h3 {
   margin: 5px 0 0;
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .price{
+    display: none;
+  }
 }
 
 /* line p */
