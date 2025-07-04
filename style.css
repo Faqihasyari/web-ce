@@ -2163,7 +2163,13 @@ body {
 .kuliner-section {
   background: #fff;
   font-family: 'Segoe UI', sans-serif;
-  padding-top: 80px;
+  padding-top: 110px;
+}
+
+@media (max-width: 768px) {
+  .kuliner-section {
+    padding-top: 50px;
+  }
 }
 
 .container-4 {
@@ -2838,3 +2844,48 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay efek gelap saat hover */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover .card-content-2 {
+  color: #f1f1f1;
+}
+
+/* Optional: panah animasi ke kanan */
+.card .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .arrow {
+  transform: translateX(5px);
+}
+
+.btn-primary:hover {
+  background-color: #254eda;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-wisata:hover {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
+}
+
