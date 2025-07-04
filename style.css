@@ -1073,7 +1073,6 @@ body {
   grid-template-columns: repeat(3, 240px);
   grid-gap: 32px;
   position: relative;
-  padding-top: 90px;
   justify-content: center;
   z-index: 1;
 }
@@ -1537,10 +1536,12 @@ body {
 }
 /* container grid */
 .container-grid{
-  background-image: url('assets/models/model2.png');
+  background-image: url('assets/models/model3.png');
   background-size: cover; 
   height: auto;
 }
+
+
 
 /* Photo Gallery */
 .gallery {
@@ -2889,3 +2890,21 @@ card:hover {
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
 }
 
+.judul-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 70px;
+
+}
+
+.judul-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a; /* contoh warna biru tua */
+}
+
+.judul-section p {
+  color: black;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
