@@ -55,14 +55,6 @@ header {
   list-style-type: none;
 }
 
-#menu-icon {
-  color: white;
-  font-size: 35px;
-  z-index: 10001;
-  cursor: pointer;
-  display: none;
-}
-
 /* Hero Section */
 .hero {
   position: relative;
